@@ -1,25 +1,22 @@
-#node {
-#	stage('Build') {
-#		echo "Build"
-#	}
-#	stage('Test') {
-#		echo "Test"
-#	}
-#}
 
 #Declarative pipeline 
 pipeline{
 	agent any 
 	stages{
-		stage("build"){
-			echo "build"
+		stage('Build'){
+			steps{
+				echo "Build"
+			}
 		}
-		stage("test"){
-			echo "test"
-			
+		stage('Test'){
+			steps{
+				echo "Test"
+			}
 		}
-		stage("intergration test"){
-			echo "intergration test"
+		stage('Intergration Test'){
+			steps{
+				echo "Intergration Test"
+			}
 		}
 	}
 }
