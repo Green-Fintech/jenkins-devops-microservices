@@ -1,5 +1,5 @@
 
-#Declarative pipeline 
+// Declarative pipeline 
 pipeline{
 	agent any 
 	stages{
